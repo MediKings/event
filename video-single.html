@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Single</title>
+	<!-- Meta-tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Eglise" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta-tags -->
+	<!--Bootstrap-css-->
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!--//Bootstrap-css-->
+	<!--Font-awesome-css-->
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<!--//Font-awesome-css-->
+	<!--Animation-effects-css-->
+		<link href='css/aos.css' rel='stylesheet prefetch' type="text/css" media="all" />
+	<!--//Animation-effects-css-->
+	<!--Required-css-->
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!--//Required-css-->
+	<!--fonts-->
+	<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Raleway:300,400,500,600,800" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+	<!--//fonts-->
+
+</head>
+
+<body>
+	<!--Header-->
+	<div class="header" id="home">
+		<!--Top-Bar-->
+		<div class="top-bar" data-aos="fade-down">
+			<div class="container-fluid">
+				<div class="header-nav">
+					<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							<h1><a class="navbar-brand" href="index.html"><span>E</span>glise</a></h1>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<nav class="cl-effect-15" id="cl-effect-15">
+								<ul>
+									<li><a href="index.html" class="active" data-hover="Accueil">Accueil</a></li>
+									<li><a href="events.html" class="" data-hover="Evenements">Evenements</a></li>
+									<li><a href="videos.html" class="" data-hover="Videos">Videos</a></li>
+									<li><a href="about.html" class="" data-hover="A propos">A propos</a></li>
+									<li><a href="contact.html" class="" data-hover="Contact">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<!--//Top-Bar-->
+	</div>
+	<!--//Header-->
+
+	<!-- Team -->
+	<div class="team" id="team">
+		<div class="container">
+			<!-- <h3 class="agileinfo-tittle">Videos</h3> -->
+			<div class="team-row">
+				<div class="col-12 team-grids" data-aos="fade-up">
+					<div class="thumbnail team-inner">
+						<video controls class="w-100">
+							<source src="static/video/">
+						</video>
+						<div class="wthree-team-caption mt-5">
+							<h4>Culte d'action de grâce</h4>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //Team -->
+
+	<!-- footer -->
+	<div class="copy-w3layouts">
+		<p>© 2022 Eglise . Tout droits Reservé | Réalisé par <a href="#">Medi King's</a> </p>
+	</div>
+	<!--// footer -->
+
+	<!-- Required Scripts -->
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+
+	<!-- Responsive Banner slider -->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 3
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+	<!-- //Responsive Banner slider -->
+	<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+		});
+	</script>
+
+	<!-- Animation-effect -->
+	<script src='js/aos.js'></script>
+	<script src="js/aosindex.js"></script>
+	<!-- //Animation-effect -->
+
+	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //smooth scrolling -->
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+
+	<!--// Required Scripts -->
+</body>
+
+</html>
